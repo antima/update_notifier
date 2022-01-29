@@ -1,0 +1,13 @@
+[Unit]
+Description=telegram-update-notifier
+After=syslog.target network.target
+
+[Service]
+Type=simple
+User=mar
+WorkingDirectory=/path/to/update_notifier
+ExecStart=/path/to/update_notifier/venv/bin/python /path/to/update_notifier/app.py
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
