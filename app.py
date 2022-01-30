@@ -1,8 +1,13 @@
-from handlers import wrap_handler, help_cmds, add, remove, list_urls, timer, timer_set, end
-from telegram.ext import Updater, CommandHandler
+"""
+Powered by Antima.it, Gianmarco Marcello
+Main entrypoint for the update_notifier application.
+"""
 
 import sys
 import os
+
+from telegram.ext import Updater, CommandHandler
+from handlers import wrap_handler, help_cmds, add, remove, list_urls, timer, timer_set, end
 
 
 if __name__ == "__main__":
