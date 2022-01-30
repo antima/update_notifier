@@ -9,7 +9,7 @@ if __name__ == "__main__":
     try:
         token = os.environ["telegram_token"]
     except KeyError:
-        sys.exit("$telegram_key is not defined")
+        sys.exit("$telegram_token is not defined")
 
     user_urls = {}
     updater = Updater(token)
