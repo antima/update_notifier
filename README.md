@@ -5,8 +5,16 @@
 
 ### As a docker container (recommended)
 
+Build and run:
+
 ```shell
-docker run --name update-notifier --env telegram_token=<yout bot token> -d
+docker build -t update-notifier:latest .
+docker run --name update-notifier --env telegram_token=<yout bot token> -d update-notifier
+```
+
+Or use one of our images from docker hub:
+```shell
+docker run --name update-notifier --env telegram_token=<yout bot token> -d abathargh/telegram-update-notifier:latest
 ```
 
 ### As a script
